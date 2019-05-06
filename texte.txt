@@ -1,0 +1,69 @@
+<section id="lescomms">
+  {% for i in 0..2 %}
+    <div class="card-comm">
+      <div class="nom-note">
+        <p>Nom</p>
+        <div class="etoiles">
+          <img src="/images/Etoile_pleine.png" alt="">
+          <img src="/images/Etoile_pleine.png" alt="">
+          <img src="/images/Etoile_pleine.png" alt="">
+          <img src="/images/Etoile_pleine.png" alt="">
+          <img src="/images/Etoile_pleine.png" alt="">
+        </div>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="signal">
+        <i class="fas fa-exclamation"></i>
+        <i class="fas fa-pencil-alt"></i>
+        <i class="fas fa-trash-alt"></i>
+      </div>
+    </div>
+  {% endfor %}
+  <div class="Plus">
+        <p>Afficher tous les commentaires</p>
+  </div>
+</section>
+
+#lescomms{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+.etoiles img{
+  width: 30px;
+  height: 30px;
+}
+.Plus{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  text-align: center;
+  padding-top: 17.5px;
+}
+.card-comm{
+  width: 100%;
+
+  display: flex;
+  flex-flow: column wrap;
+  background-color: pink;
+  margin-bottom: 10px;
+}
+.nom-note{
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 10px;
+}
+.signal{
+ display: flex;
+ justify-content: flex-end;
+ margin-right: 5vw;
+}
+.signal i{
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+  margin: 10px;
+}
+
